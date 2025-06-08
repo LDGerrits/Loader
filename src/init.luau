@@ -1,6 +1,9 @@
 --!strict
 
 -- Loader
+-- L.D. Gerrits
+-- Adapted from the Axis by Stephen Leitnick.
+-- June 08, 2025
 
 export type ServiceLifecycleFn = (self: Service) -> ()
 --[=[
@@ -104,7 +107,7 @@ end
 	without any yield.
 	:::
 ]=]
-function Loader.Start(self: Loader)
+function Loader.Start(self: Loader): ()
 	if self._started or self._starting then
 		error("Loader already started", 2)
 	end
@@ -171,7 +174,7 @@ end
 	print("Loader has started!")
 	```
 ]=]
-function Loader.AwaitStart(self: Loader)
+function Loader.AwaitStart(self: Loader): ()
 	if self._started then
 		return
 	end
@@ -189,7 +192,7 @@ end
 	end)
 	```
 ]=]
-function Loader.OnStart(self: Loader, callback: () -> ())
+function Loader.OnStart(self: Loader, callback: () -> ()): ()
 	if self._started then
 		task.spawn(callback)
 		return

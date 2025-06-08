@@ -1,5 +1,5 @@
 [package]
-name = "l.d.gerrits/loader"
+name = "ldgerrits/loader"
 description = "A lightweight services loader for the Roblox ecosystem adapted from Axis by Sleitnick"
 version = "1.0.0"
 license = "MIT"

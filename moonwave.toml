@@ -5,5 +5,5 @@ enabled = true
 includeReadme = false
 
 [docusaurus]
-tagline = "A provider framework for the Roblox ecosystem"
+tagline = "A services loader for the Roblox ecosystem"
 favicon = "/favicon.png"

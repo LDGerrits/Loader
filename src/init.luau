@@ -2,7 +2,7 @@
 
 -- Loader
 -- L.D. Gerrits
--- Adapted from the Axis by Stephen Leitnick.
+-- Adapted from the Axis library by Stephen Leitnick.
 -- June 08, 2025
 
 export type ServiceLifecycleFn = (self: Service) -> ()

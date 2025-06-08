@@ -17,6 +17,8 @@ function MyService.Start(self: MyService)
 	print("Started")
 end
 
+export type MyService = typeof(MyService)
+
 return MyService
 ```
 
@@ -28,7 +30,7 @@ A script to bootstrap Loader might look like this:
 local Loader = require(somewhere.Loader)
 
 for _, module in ipairs(somewhere.MyServiceModules:GetChildren()) do
-	Loader:AddService(service)
+	Loader:AddService(module)
 end
 
 Loader:Start()

@@ -1,9 +1,18 @@
 [package]
-name = "sleitnick/axis"
-description = "A services loader for the Roblox ecosystem"
-version = "0.1.0"
+name = "l.d.gerrits/loader"
+description = "A lightweight services loader for the Roblox ecosystem adapted from Axis by Sleitnick"
+version = "1.0.0"
 license = "MIT"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+exclude = ["**"]
+include = [
+    "default.project.json",
+    "src",
+    "src/**",
+    "LICENSE",
+    "README.md",
+    "wally.toml",
+]
 
 [dependencies]

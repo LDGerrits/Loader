@@ -1,7 +1,3 @@
-[![CI](https://github.com/Sleitnick/Loader/actions/workflows/ci.yaml/badge.svg)](https://github.com/Sleitnick/Loader/actions/workflows/ci.yaml)
-[![CD](https://github.com/Sleitnick/Loader/actions/workflows/cd.yaml/badge.svg)](https://github.com/Sleitnick/Loader/actions/workflows/cd.yaml)
-[![Docs](https://github.com/Sleitnick/Loader/actions/workflows/docs.yaml/badge.svg)](https://github.com/Sleitnick/Loader/actions/workflows/docs.yaml)
-
 # Loader
 
 Loader is a service framework for the Roblox ecosystem.
